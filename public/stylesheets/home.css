@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#header {
+    height: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("../images/top_picture.jpg");
+}
+
+.title {
+    width: 60%;
+}
+
+.info {
+    min-height: 2000px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*border-left-style: solid;
+    border-left-width: 0.05rem;
+    border-left-color: black;
+    border-right-style: solid;
+    border-right-width: 0.05rem;
+    border-right-color: black;*/
+}
+
+.contact {
+    height: 200px;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.readMore {
+    position: absolute;
+    bottom: 3%;
+    margin: 0 auto;
+    color: black;
+}
+
+.readMore a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#mainNavbar .navbar-brand {
+    font-size: 1.2rem;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar.scrolled {
+    background: white;
+    transition: background 250ms;
+    border: none;
+}
+
+
+
+@media (max-width: 991.98px) {
+    #mainNavbar {
+        background-color: white;
+    }
+
+    .txtReadMore {
+        display: none;
+    }
+}
