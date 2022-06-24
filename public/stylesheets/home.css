@@ -15,6 +15,11 @@ body {
 
 .title {
     width: 60%;
+    height: 35%;
+}
+
+.lead {
+    font-size: 1.5rem;
 }
 
 .info {
