@@ -14,3 +14,13 @@ $(document).on('click', 'a[href^="#"]', function(event){
         scrollTop: $($.attr(this, 'href')).offset().top - navHeight
     }, 800);
 });
+
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
