@@ -34,6 +34,13 @@ body {
     border-right-color: black;*/
 }
 
+.avatar {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
 .contact {
     height: 200px;
     background-color: gray;
