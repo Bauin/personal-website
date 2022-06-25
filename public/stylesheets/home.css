@@ -23,9 +23,9 @@ body {
 }
 
 .info {
-    min-height: 2000px;
+    /*min-height: 2000px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;*/
     /*border-left-style: solid;
     border-left-width: 0.05rem;
     border-left-color: black;
@@ -44,13 +44,23 @@ body {
     align-items: center;
 }
 
-.avatar {
+.avatar-image {
     border-radius: 50%;
     width: 45%;
 }
 
 .experience-image {
     border-radius: 30px;
+    width: 70%;
+    height: 70%;
+}
+
+.diploma-image {
+    width: 80%;
+    height: 80%;
+}
+
+.linux-image {
     width: 70%;
     height: 70%;
 }
@@ -122,4 +132,10 @@ body {
         height: 90%;
     }
 
+    #education  :nth-child(1) {
+        order: 2;
+    }
+    #education  :nth-child(2) {
+        order: 1;
+    }
 }
