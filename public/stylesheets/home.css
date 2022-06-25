@@ -34,8 +34,14 @@ body {
     border-right-color: black;*/
 }
 
-.row {
-    margin-top: 70px;
+.col-margin {
+    margin-top: 60px;
+}
+
+.content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .avatar {
@@ -44,12 +50,9 @@ body {
 }
 
 .experience-image {
+    border-radius: 30px;
     width: 70%;
-}
-
-.content-image {
-    display: flex;
-    justify-content: center;
+    height: 70%;
 }
 
 .contact {
@@ -107,4 +110,16 @@ body {
     .txtReadMore {
         display: none;
     }
+
+    #about   :nth-child(1) {
+        order: 2;
+    }
+    #about   :nth-child(2) {
+        order: 1;
+    }
+
+    .experience-image {
+        height: 90%;
+    }
+
 }
