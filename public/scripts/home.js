@@ -5,7 +5,6 @@ $(function () {
     });
 });
 
-
 $(document).on('click', 'a[href^="#"]', function(event){
     event.preventDefault();
     var navHeight = $("#mainNavbar").outerHeight();
@@ -23,4 +22,14 @@ $(document).ready(function () {
             $(".navbar-toggler").click();
         }
     });
+});
+
+$(document).scroll(function() {
+    var scroll = scrollY;
+    if (scroll > 1260) {
+        document.getElementById("mainNavbar").style.borderBottom = "thin solid black";
+    }
+    else {
+        document.getElementById("mainNavbar").style.borderBottom = "none";
+    }
 });
