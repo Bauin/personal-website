@@ -32,6 +32,10 @@ body {
     margin-top: 60px;
 }
 
+.list-margin {
+    margin-top: 10px;
+}
+
 .content-image {
     display: flex;
     justify-content: center;
