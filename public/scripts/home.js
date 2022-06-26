@@ -26,7 +26,8 @@ $(document).ready(function () {
 
 $(document).scroll(function() {
     var scroll = scrollY;
-    if (scroll > 1260) {
+    var infoPos = document.getElementById("info").offsetTop;
+    if (scroll > (infoPos - 60)) {
         document.getElementById("mainNavbar").style.borderBottom = "thin solid black";
     }
     else {
