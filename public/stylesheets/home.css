@@ -22,6 +22,12 @@ body {
     font-size: 1.5rem;
 }
 
+.underline:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3.5px;
+}
+
 .col-margin {
     margin-top: 60px;
 }
@@ -114,6 +120,10 @@ body {
     .title {
         width: 60%;
         height: 60%;
+    }
+
+    .underline:hover {
+        text-decoration: none;
     }
 
     .readMore {
