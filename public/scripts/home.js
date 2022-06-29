@@ -1,10 +1,15 @@
-$(function () {
-    $(document).scroll(function(){
-        var $nav = $("#mainNavbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-    });
+/*****
+ * Check if the user has scrolled and toggle class based on that.
+*****/
+$(document).scroll(function(){
+    var $nav = $("#mainNavbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
 });
 
+
+/***** 
+ * Scroll down to another section on the page.
+*****/
 $(document).on('click', 'a[href^="#"]', function(event){
     event.preventDefault();
     var navHeight = $("#mainNavbar").outerHeight();
@@ -14,6 +19,9 @@ $(document).on('click', 'a[href^="#"]', function(event){
     }, 800);
 });
 
+/***** 
+ * Close the menu when clicked on a link.
+*****/
 $(document).ready(function () {
     $(document).click(function (event) {
         var clickover = $(event.target);
@@ -24,6 +32,9 @@ $(document).ready(function () {
     });
 });
 
+/*****
+ * Add a border to the navbar when scrolled down to a certain point on the page.
+*****/
 $(document).scroll(function() {
     var scroll = scrollY;
     var infoPos = document.getElementById("info").offsetTop;
